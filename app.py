@@ -11,13 +11,21 @@ def index():
 
 @app.route('/predict',methods=['GET','POST'])
 def predict():
-    try:
-        if request.method == 'POST':
+    if request.method == 'POST':
+        try:
             data = request.form.to_dict()
             print(data)
-            # return render_template('predict.html')
-    except Exception as e:
-        return str(e)
+        except Exception as e:
+            print('The Exception message is: ', e)
+            return 'something is wrong'
+
+    else:
+        return render_template('predict.html')
+
+@app.route('/train',methods=['GET','POST'])
+def train():
+    pass
+
 
 if __name__ == '__main__':
     app.run(debug=True)
