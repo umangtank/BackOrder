@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request,json
+import Training_file as train
 
 app = Flask(__name__)
 
@@ -24,7 +25,7 @@ def predict():
 
 @app.route('/train',methods=['GET','POST'])
 def train():
-    pass
+    train_obj = train.Training()
 
 
 if __name__ == '__main__':
