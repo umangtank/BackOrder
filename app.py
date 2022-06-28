@@ -1,5 +1,5 @@
-from flask import Flask,render_template,request,json
-import Training_file as train
+from flask import Flask,render_template,request
+import training_file as train
 
 app = Flask(__name__)
 
@@ -24,9 +24,10 @@ def predict():
         return render_template('predict.html')
 
 @app.route('/train',methods=['GET','POST'])
-def train():
-    train_obj = train.Training()
-
+def training():
+    train_obj = train.training()
+    train_obj.trainingModel()
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
