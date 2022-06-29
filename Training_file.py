@@ -1,6 +1,8 @@
 import data_loder
 from data_preprocessing import preprocessing
 from sklearn.model_selection import train_test_split
+from Model_Finder import Model
+from Save_Model import save_methods
 
 class training:
     def __init__(self):
@@ -42,7 +44,17 @@ class training:
             x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=1 / 3, random_state=355)
             
 
-            print(x_train.shape,x_test.shape,y_train.shape,y_test.shape)
+            # object initialization
+            model_finder = Model.Model_Finder() 
+
+            # Getting the best model for each of the clusters
+            best_model_name,best_model = model_finder.get_best_model(x_train,y_train,x_test,y_test)
+
+            #saving the best model to the directory.
+            model_op = save_methods.Model_Operation()
+            save_model = model_op.save_model(best_model, best_model_name)   
+            print(save_model)
+
         except Exception as e:
             print('The Exception message is: ', e)
             return 'something is wrong'
