@@ -1,8 +1,11 @@
 import pandas as pd
+
+
 class dataGatter:
     def __init__(self):
-        self.training_file = "Dataset\Kaggle_Training_Dataset_v2.csv"
+        self.training_file = 'Dataset\Kaggle_Training_Dataset_v2.csv'
         self.testing_file = "Dataset\Kaggle_Test_Dataset_v2.csv"
+        self.prediction_data = 'Prediction_Output_File\Predictions.csv'
 
     def get_data(self):
         try:
@@ -12,5 +15,14 @@ class dataGatter:
             return self.data
         
         except Exception as e:
-            print('The Exception message is: ', e)
+            # # # # print('The Exception message is: ', e)
+            return 'something is wrong'
+
+    def prediction(self):
+        try:
+            self.Pdata = pd.read_csv(self.prediction_data)  # reading the data file
+            return self.Pdata
+
+        except Exception as e:
+            # # # # print('The Exception message is: ', e)
             return 'something is wrong'

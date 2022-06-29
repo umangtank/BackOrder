@@ -20,7 +20,7 @@ class Preprocessor:
             return self.useful_data
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def encode_categorical_columns(self, data):
@@ -36,7 +36,7 @@ class Preprocessor:
             return self.data
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def is_null_present(self, data):
@@ -65,7 +65,7 @@ class Preprocessor:
             return self.null_present, self.cols_with_missing_values
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def separate_label_feature(self, data, label_column_name):
@@ -79,7 +79,7 @@ class Preprocessor:
             return self.X, self.Y
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def scale_numerical_columns(self, data):
@@ -96,7 +96,7 @@ class Preprocessor:
             return self.scaled_num_df
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def handle_imbalanced_dataset(self, x, y):
@@ -108,5 +108,5 @@ class Preprocessor:
             return self.x_sampled, self.y_sampled
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'

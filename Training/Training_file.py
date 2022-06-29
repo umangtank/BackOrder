@@ -1,4 +1,4 @@
-import data_loder
+import Data_ingestion.data_loder as data_loder
 from data_preprocessing import preprocessing
 from sklearn.model_selection import train_test_split
 from Model_Finder import Model
@@ -43,7 +43,7 @@ class training:
             # parsing all the clusters and looking for the best ML algorithm to fit on individual cluster
             x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=1 / 3, random_state=0)
             
-            print(x_train.columns)
+            # print(x_train.columns)
             # object initialization
             model_finder = Model.Model_Finder() 
 
@@ -53,10 +53,10 @@ class training:
             #saving the best model to the directory.
             model_op = save_methods.Model_Operation()
             save_model = model_op.save_model(best_model, best_model_name)   
-            print(save_model)
+            # print(save_model)
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     

@@ -1,7 +1,7 @@
 from Save_Model import save_methods
 import pandas as pd
 from data_preprocessing import preprocessing
-
+import os
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -22,7 +22,7 @@ class prediction :
             return data
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # # print('The Exception message is: ', e)
             return 'something is wrong'
 
  
@@ -32,16 +32,18 @@ class prediction :
         try:
             model_loader = save_methods.Model_Operation()
             model_name = model_loader.find_correct_model_file()
-            print(model_name)
+            # # print(model_name)
             model = model_loader.load_model(model_name)
             result = list(model.predict(self.data))
-            print(result)
-            # result = pd.DataFrame(result, columns=['Prediction'])
-            # result["Prediction"] = result["Prediction"].map({0: "Yes", 1: "No"})
-            # path = "Prediction_Output_File/Predictions.csv"
-            # result.to_csv("Prediction_Output_File/Predictions.csv", header=True,mode='a+')
+            # # print(result)
+
+            result = pd.DataFrame(result, columns=['Prediction'])
+            result["Prediction"] = result["Prediction"].map({0: "Yes", 1: "No"})
+            path = "Prediction_Output_File"
+            os.makedirs(path,exist_ok=True)
+            result.to_csv("Prediction_Output_File/Predictions.csv", header=True,mode='a+')
             
         except Exception as error:
-            print('The Exception message is: ', error)
+            # # print('The Exception message is: ', error)
             return 'something is wrong'
 

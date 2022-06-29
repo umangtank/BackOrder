@@ -59,7 +59,7 @@ class Model_Finder:
             return self.ran
         
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def get_best_params_for_xgboost(self,train_x,train_y):
@@ -89,7 +89,7 @@ class Model_Finder:
             return self.xgb
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
     def get_best_model(self,train_x,train_y,test_x,test_y):
@@ -125,6 +125,6 @@ class Model_Finder:
                 return 'Random Forest',self.ran
 
         except Exception as e:
-            print('The Exception message is: ', e)
+            # print('The Exception message is: ', e)
             return 'something is wrong'
 
