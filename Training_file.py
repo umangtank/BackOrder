@@ -41,9 +41,9 @@ class training:
             X, Y = preprocessor.handle_imbalanced_dataset(X, Y)
 
             # parsing all the clusters and looking for the best ML algorithm to fit on individual cluster
-            x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=1 / 3, random_state=355)
+            x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=1 / 3, random_state=0)
             
-
+            print(x_train.columns)
             # object initialization
             model_finder = Model.Model_Finder() 
 
