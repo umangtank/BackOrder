@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-import training_file as train
+import Training_file as train
 
 app = Flask(__name__)
 
