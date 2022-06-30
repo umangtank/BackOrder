@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import RobustScaler
 from imblearn.under_sampling import NearMiss
-import warnings
+import warnings,pickle
 warnings.filterwarnings("ignore")
 
 
@@ -25,6 +25,7 @@ class Preprocessor:
 
     def encode_categorical_columns(self, data):
         self.data = data
+        print(self.data.columns)
         try:
             self.categorical_column = [
                 column for column in self.data.columns if self.data[column].dtype == 'object']
@@ -79,7 +80,7 @@ class Preprocessor:
             return self.X, self.Y
 
         except Exception as e:
-            # print('The Exception message is: ', e)
+            print('The Exception message is: ', e)
             return 'something is wrong'
 
     def scale_numerical_columns(self, data):
@@ -87,12 +88,19 @@ class Preprocessor:
         self.data = data
 
         try:
+            path = "scalingModel.pkl"
             self.num_df = self.data
             self.scaler = RobustScaler()  # initializing robust scaler
             self.scaled_data = self.scaler.fit_transform(self.num_df)
             self.scaled_num_df = pd.DataFrame(
                 data=self.scaled_data, columns=self.num_df.columns)
+            print(self.scaled_num_df.columns)
 
+            with open("scale/scalingModel.pkl",'wb') as f:
+                pickle.dump(self.scaler, f)
+            # with open('robustScaler.pkl','wb') as f:
+                # pickle.dump(self.scaler, f)
+            print('Scaling done')
             return self.scaled_num_df
 
         except Exception as e:
@@ -104,7 +112,7 @@ class Preprocessor:
             self.nmsample = NearMiss()
             self.x_sampled, self.y_sampled = self.nmsample.fit_resample(
                 x, y)  # upsampling the data
-
+            print(self.x_sampled)
             return self.x_sampled, self.y_sampled
 
         except Exception as e:

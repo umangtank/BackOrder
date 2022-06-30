@@ -27,24 +27,24 @@ def predict():
             perf_6_month_avg = float(request.form['perf_6_month_avg'])
             perf_12_month_avg = float(request.form['perf_12_month_avg'])
     
-            # print(sales_1_month,sales_3_month,sales_6_month,sales_9_month,forecast_3_month,forecast_6_month,forecast_9_month,perf_6_month_avg,perf_12_month_avg)
+            print(sales_1_month,sales_3_month,sales_6_month,sales_9_month,forecast_3_month,forecast_6_month,forecast_9_month,perf_6_month_avg,perf_12_month_avg)
             p = pred.prediction() #Predict A File
             data = p.convert_input_into_data([forecast_3_month,forecast_6_month,forecast_9_month,sales_1_month,sales_3_month,sales_6_month,sales_9_month,perf_6_month_avg,perf_12_month_avg])
             # print(data)
             p.get_prediction(data)
 
             predict = data_loder.dataGatter()
-            # print(predict)
+            print(predict)
             prediction = predict.prediction()
     
-            # # showing the prediction results in a UI
-            if(list(prediction["Prediction"])[-1] == 'No'):
+            # showing the prediction results in a UI
+            if(list(prediction["Prediction"])[0] == 'No'):
                 return render_template('predict.html', prediction = 0)
             else:
                 return render_template('predict.html', prediction= 1)
 
         except Exception as e:
-            # print('The Exception message is:' , e)
+            print('The Exception message is:' , e)
             return 'something is wrong'
 
 
@@ -53,6 +53,7 @@ def predict():
 
 @app.route('/train',methods=['GET','POST'])
 def training():
+    print('inside train')
     train_obj = train.training()
     train_obj.trainingModel()
     return render_template("index.html")

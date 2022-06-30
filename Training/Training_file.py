@@ -35,7 +35,7 @@ class training:
                 data, label_column_name='went_on_backorder')
 
             # scaling the X values
-            X = preprocessor.scale_numerical_columns(X)
+            # X = preprocessor.scale_numerical_columns(X)
 
             # Imbalanced dataset to make it a balanced one
             X, Y = preprocessor.handle_imbalanced_dataset(X, Y)
