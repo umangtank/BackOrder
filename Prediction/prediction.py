@@ -25,7 +25,7 @@ class prediction:
                               "sales_3_month", "sales_6_month", "sales_9_month", "perf_6_month_avg", "perf_9_month_avg"])
             data = df.transpose()
             self.log_writer.log(
-                self.filepath, "Convert categorical values to numeric values", 'warning')
+                self.filepath, "Convert categorical values to numeric values", 'info')
             data = preprocessor.encode_categorical_columns(data)
             self.log_writer.log(
                 self.filepath, "Exit In Convert_input_into_data", 'info')
