@@ -44,7 +44,7 @@ def predict():
                 return render_template('predict.html', prediction= "Yes")
 
         except Exception as e:
-            print('The Exception message is:')
+            print('The Exception message is:',e)
             return 'something is wrong'
 
 

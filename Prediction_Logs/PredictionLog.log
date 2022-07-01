@@ -1,0 +1,21 @@
+[2022-07-01 21:33:49,295: INFO: logerApp] Enter In Convert_input_into_data
+[2022-07-01 21:33:49,307: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-01 21:33:49,318: INFO: logerApp] Exit In Convert_input_into_data
+[2022-07-01 21:33:49,737: INFO: _internal] 127.0.0.1 - - [01/Jul/2022 21:33:49] "POST /predict HTTP/1.1" 200 -
+[2022-07-01 21:52:34,797: INFO: logerApp] Enter In Convert_input_into_data
+[2022-07-01 21:52:34,866: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-01 21:52:34,887: INFO: logerApp] Exit In Convert_input_into_data
+[2022-07-01 21:52:35,389: INFO: _internal] 127.0.0.1 - - [01/Jul/2022 21:52:35] "POST /predict HTTP/1.1" 200 -
+[2022-07-01 21:55:05,972: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\Internship\\BackOrder\\BackOrder\\Prediction\\prediction.py', reloading
+[2022-07-01 21:55:18,628: INFO: logerApp] Enter In Convert_input_into_data
+[2022-07-01 21:55:18,660: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-01 21:55:18,674: INFO: logerApp] Exit In Convert_input_into_data
+[2022-07-01 21:55:18,674: INFO: logerApp] Enter In Get_prediction
+[2022-07-01 21:55:18,674: INFO: logerApp] Model Name:  Random Forest
+[2022-07-01 21:55:19,262: INFO: logerApp] Prediction:  [1]
+[2022-07-01 21:55:19,287: INFO: logerApp] Exit In Get_prediction
+[2022-07-01 21:55:19,455: INFO: _internal] 127.0.0.1 - - [01/Jul/2022 21:55:19] "POST /predict HTTP/1.1" 200 -
+[2022-07-01 22:00:28,717: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\Internship\\BackOrder\\BackOrder\\Prediction\\prediction.py', reloading
+[2022-07-01 22:25:18,317: WARNING: logerApp] Convert categorical values to numeric values
+[2022-07-01 22:25:18,344: INFO: _internal] 127.0.0.1 - - [01/Jul/2022 22:25:18] "POST /predict HTTP/1.1" 200 -
+[2022-07-01 22:28:07,861: INFO: _internal]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\Internship\\BackOrder\\BackOrder\\Prediction\\prediction.py', reloading
