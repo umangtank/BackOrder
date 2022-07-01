@@ -14,7 +14,7 @@ def index():
 
 @app.route('/predict',methods=['GET','POST'])
 def predict():
-    # print('inside predict')
+    print('inside predict')
     if request.method == 'POST':
         try:
             sales_1_month = float(request.form['sales_1_month'])
@@ -39,12 +39,12 @@ def predict():
     
             # showing the prediction results in a UI
             if(list(prediction["Prediction"])[0] == 'No'):
-                return render_template('predict.html', prediction = 0)
+                return render_template('predict.html', prediction = "No")
             else:
-                return render_template('predict.html', prediction= 1)
+                return render_template('predict.html', prediction= "Yes")
 
         except Exception as e:
-            print('The Exception message is:' , e)
+            print('The Exception message is:')
             return 'something is wrong'
 
 
