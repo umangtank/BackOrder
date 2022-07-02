@@ -8,3 +8,12 @@
 [2022-07-02 22:32:14,438: INFO] Exit In Get_prediction
 [2022-07-02 22:32:14,690: INFO] Enter In Prediction
 [2022-07-02 22:32:14,715: INFO] 127.0.0.1 - - [02/Jul/2022 22:32:14] "POST /predict HTTP/1.1" 200 -
+[2022-07-02 22:33:55,838: INFO] Enter In Convert_input_into_data
+[2022-07-02 22:33:55,892: INFO] Convert categorical values to numeric values
+[2022-07-02 22:33:55,906: INFO] Exit In Convert_input_into_data
+[2022-07-02 22:33:56,043: INFO] Enter In Get_prediction
+[2022-07-02 22:33:56,044: INFO] Model Name:  Random Forest
+[2022-07-02 22:33:56,326: INFO] Prediction:  [1]
+[2022-07-02 22:33:56,359: INFO] Exit In Get_prediction
+[2022-07-02 22:33:56,497: INFO] Enter In Prediction
+[2022-07-02 22:33:56,502: INFO] 127.0.0.1 - - [02/Jul/2022 22:33:56] "POST /predict HTTP/1.1" 200 -
