@@ -1,4 +1,4 @@
-# Backorder-prediction
+## Backorder-prediction
 -----
 <p>
 Backorder is an order which can’t be fulfilled at the given time due to lack of supply or the product is currently out of stock or not in inventory but can guarantee delivery of the goods or service requested by a certain date in the future because the production of goods or replenishment of inventory is underway. Unlike in the situation of Out-of-stock where the delivery date of the goods can’t be promised , in the Backorder scenario the customers are allowed to shop for the products and order. Simply put Backorder can be thought of as an order with a delayed delivery date.
@@ -7,7 +7,7 @@ Backorder is an order which can’t be fulfilled at the given time due to lack o
 Backorders are unavoidable, but by anticipating which things will be backordered, planning can be streamlined at several levels, preventing unexpected strain on production, logistics, and transportation. ERP systems generate a lot of data (mainly structured) and also contain a lot of historical data; if this data can be properly utilized, a predictive model to forecast backorders and plan accordingly can be constructed. Based on past data from inventories, supply chain, and sales, classify the products as going into backorder (Yes or No).
 </p>
 
-# Data Analysis
+### Data Analysis
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In the Train dataset we are provided with 23 columns(Features) of data.
@@ -28,7 +28,7 @@ In the Train dataset we are provided with 23 columns(Features) of data.
 
 Out of the 23 features given in the dataset 15 are numerical and 8(including the target variable) are categorical features.
 
-# Approach
+### Approach
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The main goal is to predict the whether a product comes in backorder or not based on different factors available in the dataset.
@@ -41,7 +41,7 @@ The main goal is to predict the whether a product comes in backorder or not base
 * Pickle File : Selected model as per best accuracy and created pickle file using pickle library.
 * Webpage & deployment : Created a webform that takes all the necessary inputs from user and shows output. After that I have deployed project on AWS .
 
-# Technologies Used
+### Technologies Used
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  * VS-Code Is Used For IDE.
@@ -61,7 +61,22 @@ The main goal is to predict the whether a product comes in backorder or not base
  * XgBoost is used for XgBoostClassifier Implementation.
  * Nearmiss Imbalance is used for handling Imbalance Data.
 
- # Run Locally
+ ### User InterFace 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Home Page 
+
+<p align="center">
+  <img src="Model_image\index.png" width='600px'>
+</p>
+
+* Predict Page
+<p align="center">
+  <img src="Model_image\predict.png" width='600px' border = "1px">
+</p>
+
+
+ ### Run Locally
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 * Clone the project
@@ -84,10 +99,10 @@ pip install -r requirements.txt
   python app.py
  ```
 
-# Usage
+### Usage
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In Development If You Want to contribute? Great!
+**In Development If You Want to contribute? Great!**
 
 To fix a bug or enhance an existing module, follow these steps:
 
@@ -110,3 +125,12 @@ To fix a bug or enhance an existing module, follow these steps:
  ```
 
 * Create a pull request
+
+### Help Me Improve
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello Reader if you find any bug please consider raising issue I will address them asap.
+
+ * [github](https://github.com/umangtank)
+  * [umangtank.me](https://umangtank.me)
+   * [Linkedin](https://www.linkedin.com/in/umangtank/)
