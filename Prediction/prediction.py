@@ -44,11 +44,11 @@ class prediction:
         try:
             model_loader = save_methods.Model_Operation()
             model_name = model_loader.find_correct_model_file()
-            self.log_writer.log(self.filepath, f"Model Name:  {model_name}")
+            self.log_writer.log(self.filepath, f"Model Name:  {model_name}",'info')
             model = model_loader.load_model(model_name)
             result = list(model.predict(self.data))
             self.log_writer.log(
-                self.filepath, f"Prediction:  {result}", 'error')
+                self.filepath, f"Prediction:  {result}", 'info')
             result = pd.DataFrame(result, columns=['Prediction'])
             result["Prediction"] = result["Prediction"].map(
                 {0: "Yes", 1: "No"})
@@ -56,7 +56,7 @@ class prediction:
             os.makedirs(path, exist_ok=True)
             result.to_csv("Prediction_Output_File/Predictions.csv",
                           header=True, mode='a+')
-            self.log_writer.log(self.filepath, "Exit In Get_prediction")
+            self.log_writer.log(self.filepath, "Exit In Get_prediction",'info')
 
         except Exception as error:
             self.log_writer.log(

@@ -1,0 +1,136 @@
+[2022-07-02 13:35:47,633: INFO] Enter In TrainingModel
+[2022-07-02 13:35:47,634: INFO] Enter In Get_data
+[2022-07-02 13:35:52,709: INFO] Enter In TrainingModel
+[2022-07-02 13:35:52,710: INFO] Enter In Get_data
+[2022-07-02 13:35:58,598: INFO] Exit In Get_data
+[2022-07-02 13:35:58,606: INFO] Data Loaded
+[2022-07-02 13:35:58,607: INFO] remove the unnamed column as it doesn't contribute to prediction.
+[2022-07-02 13:36:00,240: INFO] Final Data:          forecast_3_month  forecast_6_month  ...  perf_12_month_avg  went_on_backorder
+0                     0.0               0.0  ...             -99.00                 No
+1                     0.0               0.0  ...               0.99                 No
+2                     0.0               0.0  ...             -99.00                 No
+3                     0.0               0.0  ...               0.13                 No
+4                     0.0               0.0  ...             -99.00                 No
+...                   ...               ...  ...                ...                ...
+1929930               0.0               0.0  ...               0.48                 No
+1929931               0.0               0.0  ...               0.48                 No
+1929932               0.0               0.0  ...               0.48                 No
+1929933               0.0               0.0  ...               0.48                 No
+1929934               0.0               0.0  ...               0.48                 No
+
+[1929935 rows x 10 columns]
+[2022-07-02 13:36:00,242: INFO] Convert categorical values to numeric values
+[2022-07-02 13:36:01,139: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:01,299: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:01,299: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:01,358: INFO] Imbalanced dataset to make it a balanced one
+[2022-07-02 13:36:09,613: INFO] Exit In Get_data
+[2022-07-02 13:36:09,621: INFO] Data Loaded
+[2022-07-02 13:36:09,621: INFO] remove the unnamed column as it doesn't contribute to prediction.
+[2022-07-02 13:36:11,528: INFO] Final Data:          forecast_3_month  forecast_6_month  ...  perf_12_month_avg  went_on_backorder
+0                     0.0               0.0  ...             -99.00                 No
+1                     0.0               0.0  ...               0.99                 No
+2                     0.0               0.0  ...             -99.00                 No
+3                     0.0               0.0  ...               0.13                 No
+4                     0.0               0.0  ...             -99.00                 No
+...                   ...               ...  ...                ...                ...
+1929930               0.0               0.0  ...               0.48                 No
+1929931               0.0               0.0  ...               0.48                 No
+1929932               0.0               0.0  ...               0.48                 No
+1929933               0.0               0.0  ...               0.48                 No
+1929934               0.0               0.0  ...               0.48                 No
+
+[1929935 rows x 10 columns]
+[2022-07-02 13:36:11,528: INFO] Convert categorical values to numeric values
+[2022-07-02 13:36:12,328: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:12,397: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:12,397: INFO] Check if missing values are present in the dataset
+[2022-07-02 13:36:12,450: INFO] Imbalanced dataset to make it a balanced one
+[2022-07-02 13:37:09,441: INFO] Split the data into train and test
+[2022-07-02 13:37:09,510: INFO] Get the best model for each of the clusters
+[2022-07-02 13:37:27,464: INFO] Split the data into train and test
+[2022-07-02 13:37:27,486: INFO] Get the best model for each of the clusters
+[2022-07-02 13:40:06,305: ERROR] The Exception message is: too many values to unpack (expected 2)
+[2022-07-02 13:40:08,961: INFO] 127.0.0.1 - - [02/Jul/2022 13:40:08] "GET /train HTTP/1.1" 200 -
+[2022-07-02 13:43:08,113: INFO] Saving the best model to the directory
+[2022-07-02 13:43:08,267: INFO] Model Saved
+[2022-07-02 13:43:10,858: INFO] 127.0.0.1 - - [02/Jul/2022 13:43:10] "GET /train HTTP/1.1" 200 -
+[2022-07-02 14:08:16,714: INFO] 127.0.0.1 - - [02/Jul/2022 14:08:16] "GET / HTTP/1.1" 200 -
+[2022-07-02 14:08:23,480: INFO] Enter In Convert_input_into_data
+[2022-07-02 14:08:23,555: INFO] Convert categorical values to numeric values
+[2022-07-02 14:08:23,580: INFO] Exit In Convert_input_into_data
+[2022-07-02 14:08:23,580: INFO] Enter In Get_prediction
+[2022-07-02 14:08:23,581: INFO] Model Name:  Random Forest
+[2022-07-02 14:08:23,922: INFO] Prediction:  [1]
+[2022-07-02 14:08:24,021: INFO] Exit In Get_prediction
+[2022-07-02 14:08:24,046: INFO] Enter In Prediction
+[2022-07-02 14:08:24,070: INFO] 127.0.0.1 - - [02/Jul/2022 14:08:24] "POST /predict HTTP/1.1" 200 -
+[2022-07-02 14:10:07,987: INFO]  * Detected change in 'C:\\Users\\umang\\Desktop\\Ineuron\\Internship\\BackOrder\\BackOrder\\loggingModule\\logerApp.py', reloading
+[2022-07-02 14:15:37,732: INFO: logerApp] Enter In TrainingModel
+[2022-07-02 14:15:37,735: INFO: logerApp] Enter In Get_data
+[2022-07-02 14:15:50,897: INFO: logerApp] Exit In Get_data
+[2022-07-02 14:15:50,935: INFO: logerApp] Data Loaded
+[2022-07-02 14:15:50,939: INFO: logerApp] remove the unnamed column as it doesn't contribute to prediction.
+[2022-07-02 14:15:54,996: INFO: logerApp] Final Data:          forecast_3_month  forecast_6_month  ...  perf_12_month_avg  went_on_backorder
+0                     0.0               0.0  ...             -99.00                 No
+1                     0.0               0.0  ...               0.99                 No
+2                     0.0               0.0  ...             -99.00                 No
+3                     0.0               0.0  ...               0.13                 No
+4                     0.0               0.0  ...             -99.00                 No
+...                   ...               ...  ...                ...                ...
+1929930               0.0               0.0  ...               0.48                 No
+1929931               0.0               0.0  ...               0.48                 No
+1929932               0.0               0.0  ...               0.48                 No
+1929933               0.0               0.0  ...               0.48                 No
+1929934               0.0               0.0  ...               0.48                 No
+
+[1929935 rows x 10 columns]
+[2022-07-02 14:15:55,001: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-02 14:15:56,712: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:15:56,938: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:15:56,939: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:15:57,252: INFO: logerApp] Imbalanced dataset to make it a balanced one
+[2022-07-02 14:16:19,871: INFO: _internal] 127.0.0.1 - - [02/Jul/2022 14:16:19] "GET / HTTP/1.1" 200 -
+[2022-07-02 14:16:27,272: INFO: logerApp] Enter In TrainingModel
+[2022-07-02 14:16:27,274: INFO: logerApp] Enter In Get_data
+[2022-07-02 14:16:37,207: INFO: logerApp] Exit In Get_data
+[2022-07-02 14:16:37,221: INFO: logerApp] Data Loaded
+[2022-07-02 14:16:37,225: INFO: logerApp] remove the unnamed column as it doesn't contribute to prediction.
+[2022-07-02 14:16:42,043: INFO: logerApp] Final Data:          forecast_3_month  forecast_6_month  ...  perf_12_month_avg  went_on_backorder
+0                     0.0               0.0  ...             -99.00                 No
+1                     0.0               0.0  ...               0.99                 No
+2                     0.0               0.0  ...             -99.00                 No
+3                     0.0               0.0  ...               0.13                 No
+4                     0.0               0.0  ...             -99.00                 No
+...                   ...               ...  ...                ...                ...
+1929930               0.0               0.0  ...               0.48                 No
+1929931               0.0               0.0  ...               0.48                 No
+1929932               0.0               0.0  ...               0.48                 No
+1929933               0.0               0.0  ...               0.48                 No
+1929934               0.0               0.0  ...               0.48                 No
+
+[1929935 rows x 10 columns]
+[2022-07-02 14:16:42,058: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-02 14:16:44,419: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:16:44,645: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:16:44,645: INFO: logerApp] Check if missing values are present in the dataset
+[2022-07-02 14:16:44,753: INFO: logerApp] Imbalanced dataset to make it a balanced one
+[2022-07-02 14:17:23,665: INFO: logerApp] Split the data into train and test
+[2022-07-02 14:17:23,824: INFO: logerApp] Get the best model for each of the clusters
+[2022-07-02 14:18:17,583: INFO: logerApp] Split the data into train and test
+[2022-07-02 14:18:17,607: INFO: logerApp] Get the best model for each of the clusters
+[2022-07-02 14:20:05,359: ERROR: logerApp] The Exception message is: too many values to unpack (expected 2)
+[2022-07-02 14:20:07,687: INFO: _internal] 127.0.0.1 - - [02/Jul/2022 14:20:07] "GET /train HTTP/1.1" 200 -
+[2022-07-02 14:24:48,545: INFO: _internal] 127.0.0.1 - - [02/Jul/2022 14:24:48] "GET / HTTP/1.1" 200 -
+[2022-07-02 14:24:57,205: INFO: logerApp] Enter In Convert_input_into_data
+[2022-07-02 14:24:57,842: INFO: logerApp] Convert categorical values to numeric values
+[2022-07-02 14:24:58,040: INFO: logerApp] Exit In Convert_input_into_data
+[2022-07-02 14:24:58,040: INFO: logerApp] Enter In Get_prediction
+[2022-07-02 14:24:58,049: INFO: logerApp] Model Name:  Random Forest
+[2022-07-02 14:24:59,092: INFO: logerApp] Prediction:  [1]
+[2022-07-02 14:24:59,244: INFO: logerApp] Exit In Get_prediction
+[2022-07-02 14:24:59,397: INFO: logerApp] Enter In Prediction
+[2022-07-02 14:24:59,427: INFO: _internal] 127.0.0.1 - - [02/Jul/2022 14:24:59] "POST /predict HTTP/1.1" 200 -
+[2022-07-02 14:25:58,350: INFO: logerApp] Saving the best model to the directory
+[2022-07-02 14:25:59,907: INFO: logerApp] Model Saved
+[2022-07-02 14:26:04,956: INFO: _internal] 127.0.0.1 - - [02/Jul/2022 14:26:04] "GET /train HTTP/1.1" 200 -
