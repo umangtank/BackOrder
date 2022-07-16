@@ -28,6 +28,20 @@ In the Train dataset we are provided with 23 columns(Features) of data.
 
 Out of the 23 features given in the dataset 15 are numerical and 8(including the target variable) are categorical features.
 
+ ### User InterFace 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Home Page 
+
+<p align="center">
+  <img src="Model_image\index.png" width='600px'>
+</p>
+
+* Predict Page
+<p align="center">
+  <img src="Model_image\predict.png" width='600px' border = "1px">
+</p>
+
 ### Approach
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -61,19 +75,7 @@ The main goal is to predict the whether a product comes in backorder or not base
  * XgBoost is used for XgBoostClassifier Implementation.
  * Nearmiss Imbalance is used for handling Imbalance Data.
 
- ### User InterFace 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-* Home Page 
-
-<p align="center">
-  <img src="Model_image\index.png" width='600px'>
-</p>
-
-* Predict Page
-<p align="center">
-  <img src="Model_image\predict.png" width='600px' border = "1px">
-</p>
 
 
  ### Run Locally
